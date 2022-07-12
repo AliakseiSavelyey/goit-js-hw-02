@@ -1156,38 +1156,38 @@
 
 
 
-const friends = ['alex', 'dmitri', 'anna', 'arina','hero','dava','jora','vika']
-console.log(friends);
-console.log(friends.length);
-console.table(friends);
-let lastindex = friends.length - 1;
-console.log(lastindex);
-friends[7] = 'inna';
-console.log(friends);
-console.log(friends[8]);
-let a = 10;
-let b = a;
-console.log(a);
-console.log(b);
-a = 20;
-console.log(a);
-console.log(b);
-const x=[1,2,3]
-const y = x;
-console.log(x);
-console.log(y);
-console.log(x === y);
-console.log([123] === [123]);
-console.log(123 === 123);
+// const friends = ['alex', 'dmitri', 'anna', 'arina','hero','dava','jora','vika']
+// console.log(friends);
+// console.log(friends.length);
+// console.table(friends);
+// let lastindex = friends.length - 1;
+// console.log(lastindex);
+// friends[7] = 'inna';
+// console.log(friends);
+// console.log(friends[8]);
+// let a = 10;
+// let b = a;
+// console.log(a);
+// console.log(b);
+// a = 20;
+// console.log(a);
+// console.log(b);
+// const x=[1,2,3]
+// const y = x;
+// console.log(x);
+// console.log(y);
+// console.log(x === y);
+// console.log([123] === [123]);
+// console.log(123 === 123);
 
-for (let i = 0; i<friends.length; i+=1){
-  friends[i] += `-${i}`;
-  console.log(friends[i]);
-}
+// for (let i = 0; i<friends.length; i+=1){
+//   friends[i] += `-${i}`;
+//   console.log(friends[i]);
+// }
 
-for (let friend of friends) {
-  console.log(friend);
-}
+// for (let friend of friends) {
+//   console.log(friend);
+// }
 
 // const apples = [1, 43, 3, 5, 11, 65, 33, 9,10,15]
 // let total = 0;
@@ -1230,16 +1230,105 @@ for (let friend of friends) {
 // }
 
 
-const logins = ['telek', 'admin', 'afrika', 'kanada', 'monkey']
-const logintofind = 'kanada';
-// let message = `${logintofind} логина нет`;
+// const logins = ['telek', 'admin', 'afrika', 'kanada', 'monkey']
+// const logintofind = 'kanada';
+// // let message = `${logintofind} логина нет`;
 
-// for (let login of logins) {
-//   if (login === logintofind) {
-//     message = `${logintofind} логин есть`;
+// // for (let login of logins) {
+// //   if (login === logintofind) {
+// //     message = `${logintofind} логин есть`;
+// //   }
+// // }
+// // console.log (message)
+
+
+// // console.log(logins.includes(logintofind));
+// // const a = 15 > 10 ?'y':'n';
+// // console.log(a)
+
+// const a = logins.includes(logintofind)
+//   ? `${logintofind} логин есть`
+//   : `${logintofind} логина нет`;
+// console.log(a)
+
+
+
+
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+// let smallnumber = numbers[0];
+
+// for (const number of numbers) {
+
+//   if (number > smallnumber) {
+//     smallnumber = number;
 //   }
 // }
-// console.log (message)
+// console.log(smallnumber);
 
 
-// console.log(logins.includes(logintofind));
+
+
+
+
+// const logins = ['telek', 'admin', 'afrika', 'kanada', 'monkey'];
+// let string = '';
+
+// for (const login of logins) {
+//   string += login + ',';
+// }
+// console.log(string);
+
+
+
+// const string = logins.join(' --- ')
+// console.log(string)
+
+
+
+// const name = 'JavaScript'
+// const strings = name.split('');
+// let invertedstring = '';
+
+// console.log(strings)
+
+// for (const string of strings) {
+
+//   // if (string === string.toLowerCase()) {
+//   //   console.log('эта буква в нижнем регистре! - ', string)
+//   //   invertedstring += string.toUpperCase();
+//   // } else {
+//   //   console.log('эта буква в верхнем регистре! - ', string);
+//   //   invertedstring += string.toLowerCase();
+//   // }
+//   const aloha = string === string.toLowerCase();
+//   invertedstring += aloha ? string.toUpperCase() : string.toLowerCase();
+// }
+
+// console.log(invertedstring);
+
+
+
+
+// ------------------------------------------------------------------методы работающие по ЦЕПОЧКЕ
+// const title = 'Hello Guys , How Are You';
+// console.log(title)
+
+// const wrongtitle = title.toLowerCase().split(' ').join('---');
+// console.log(wrongtitle)
+
+
+
+
+
+
+// ---------------------------------------------------------------метод CONCAT
+const array1 = [5, 10, 15, 20];
+const array2 = [10, 20, 30];
+let total = 0;
+
+const numbers = array1.concat(array2);
+for (const number of numbers) {
+  total += number;
+}
+
+console.log(total);
