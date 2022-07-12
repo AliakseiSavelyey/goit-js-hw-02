@@ -1322,13 +1322,36 @@
 
 
 // ---------------------------------------------------------------метод CONCAT
-const array1 = [5, 10, 15, 20];
-const array2 = [10, 20, 30];
-let total = 0;
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+// let total = 0;
 
-const numbers = array1.concat(array2);
-for (const number of numbers) {
-  total += number;
-}
+// const numbers = array1.concat(array2);
+// for (const number of numbers) {
+//   total += number;
+// }
 
-console.log(total);
+// console.log(total);
+
+
+
+
+
+
+
+const fails = [
+  'карточка-1',
+  'карточка-2',
+  'карточка-3',
+  'карточка-4',
+  'карточка-5',
+];
+
+// --------------------------------------------------------------удалить элемент из массива
+const failsRemove = 'карточка-3';
+const index = fails.indexOf(failsRemove);
+console.log(index)
+
+// --------------------------------------------- -метод SPLICE (деструктивный метод)обновляет данные
+fails.splice(1, 0,'hello',1,2,3,4,);
+console.table(fails)
