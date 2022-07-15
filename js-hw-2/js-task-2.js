@@ -1620,19 +1620,56 @@
 
 // --------------------------------------------------------------------ВОЗВРАЩАЕМ ВСЮ СТРОКУ В МАЛЕНЬКОМ РЕГИСТРЕ И ПРОБЕЛЫ ЗАМЕНЯЮТСЯ НА ТИРЕ (2 СПОСОБА)
 
-const lowercase = function (string) {
-  // const normalizedtitle = string.toLowerCase();
-  // const word = normalizedtitle.split(' ');
-  // const slug = word.join('-');
+// const lowercase = function (string) {
+//   // const normalizedtitle = string.toLowerCase();
+//   // const word = normalizedtitle.split(' ');
+//   // const slug = word.join('-');
 
 
-  // return slug
+//   // return slug
 
 
-  return string.toLowerCase().split(' ').join('-')
+//   return string.toLowerCase().split(' ').join('-')
+// }
+
+
+// console.log(lowercase('Hello Guys How Are You'));
+// console.log(lowercase('Lets Go To The Outside'));
+// console.log(lowercase('My Home Is Very Big'));
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------ПСЕВДОМАССИВ В МАССИВ ЧЕРЕЗ Array.from
+// const fn = function () {
+//   console.log(arguments);
+
+//   const args = Array.from(arguments);
+
+//   console.log(args);
+// }
+
+
+// fn(1, 2, 3);
+// fn(2, 3, 5, 6, 3, 4);
+// fn(3, 5, 1, 2, 3, 5, 6, 67, 4, 3, 45);
+
+
+
+
+
+
+// -------------------------------------------------------------ПСЕВДОМАССИВ В МАССИВ ЧЕРЕЗ ... REST (БОЛЕЕ СОВРЕМЕННЫЙ СПОСОБ) (в параметры можно записывать любое слово)
+
+const fn = function (...Leha) {
+  console.log(Leha);
 }
 
 
-console.log(lowercase('Hello Guys How Are You'));
-console.log(lowercase('Lets Go To The Outside'));
-console.log(lowercase('My Home Is Very Big'));
+fn(1, 2, 3);
+fn(2, 3, 5, 6, 3, 4);
+fn(3, 5, 1, 2, 3, 5, 6, 67, 4, 3, 45);
