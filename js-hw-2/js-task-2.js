@@ -140,30 +140,46 @@
 // }
 // console.log(result);
 
+
+
+
+
+
+
+
+
+
 // Напиши функцию logItems(array), которая получает массив и использует цикл for, который для каждого элемента массива будет выводить в консоль сообщение в формате [номер элемента] - [значение элемента].
 
 // Нумерация должна начинаться с 1. К примеру для первого элемента массива ['Mango', 'Poly', 'Ajax'] с индексом 0 будет выведено '1 - Mango', а для индекса 2 выведет '3 - Ajax'.
 
 // const logItems = function (array) {
-//   // console.log(array);
 //   // твой код
-//   for (let i = 0; i < array.length; i += 1) {
-//     console.log(`${i+1}-${array[i]}`);
+//   let index = 0;
+//   for (let arr of array) {
+//     index += 1;
+//     console.log(`${index}-${arr}`);
 //   }
-// };
+// }
+
 
 // logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 
 // logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 
+
+
+
+
+
+
+
+
 // Напиши скрипт подсчета стоимости гравировки украшений. Для этого создай функцию calculateEngravingPrice(message, pricePerWord) принимающую строку (в строке будут только слова и пробелы) и цену гравировки одного слова, и возвращающую цену гравировки всех слов в строке.
 
-// const calculateEngravingPrice = function(message, pricePerWord) {
+// const calculateEngravingPrice = function (message, pricePerWord) {
 //   // твой код
-//   const count = message.split(' ').length
-//   // console.log(count)
-//   return count * pricePerWord;
-// };
+// }
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
@@ -190,20 +206,34 @@
 //   calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
 // ); // 120
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Напиши фукцнию findLongestWord(string), которая принимает параметром произвольную строку (в строке будут только слова и пробелы) и возвращает самое длинное слово в этой строке.
 
-// const findLongestWord = function(string) {
+// const findLongestWord = function (string) {
 //   // твой код
-//   const govno = string.split(' ');
-//   let pipi = govno[0];
-//   for (const govn of govno) {
-//     if (govn.length > pipi.length) {
-//       pipi = govn;
+//   let bigword=string[0];
+//   for (const el of string) {
+//     if (el.length < bigword.length) {
+//       bigword = el;
 //     }
 //   }
-//   return pipi
-//   // console.log(govno);
-// };
+//   return bigword
+// }
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
@@ -214,6 +244,16 @@
 
 // console.log(findLongestWord('May the force be with you')); // 'force'
 
+
+
+
+
+
+
+
+
+
+
 // Напиши функцию formatString(string) которая принимает строку и форматирует ее если необходимо.
 
 // Если длина строки не превышает 40 символов, функция возвращает ее в исходном виде.
@@ -221,10 +261,7 @@
 
 // const formatString = function(string) {
 //   // твой код
-//   if (string.length > 40) {
-//     return string.slice(0,40)+'...'
-//   } else return string
-// };
+//
 
 // /*
 //  * Вызовы функции для проверки работоспособности твоей реализации.
@@ -244,6 +281,17 @@
 //   ),
 // );
 // // вернется форматированная строка
+
+
+
+
+
+
+
+
+
+
+
 
 // Напиши функцию checkForSpam(message), принимающую 1 параметр message - строку. Функция проверяет ее на содержание слов spam и sale. Если нашли зарещенное слово то функция возвращает true, если запрещенных слов нет функция возвращает false. Слова в строке могут быть в произвольном регистре.
 
@@ -514,6 +562,16 @@
 // } else {
 //   alert(`Доставка в ${country} будет стоить ${price} кредитов`);
 // }
+
+
+
+
+
+
+
+
+
+
 
 // Напиши скрипт который просит посетителя ввести число в prompt до тех пор, пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
 
@@ -1339,19 +1397,242 @@
 
 
 
-const fails = [
-  'карточка-1',
-  'карточка-2',
-  'карточка-3',
-  'карточка-4',
-  'карточка-5',
-];
+// const fails = [
+//   'карточка-1',
+//   'карточка-2',
+//   'карточка-3',
+//   'карточка-4',
+//   'карточка-5',
+// ];
 
-// --------------------------------------------------------------удалить элемент из массива
-const failsRemove = 'карточка-3';
-const index = fails.indexOf(failsRemove);
-console.log(index)
+// // --------------------------------------------------------------удалить элемент из массива
+// const failsRemove = 'карточка-3';
+// const index = fails.indexOf(failsRemove);
+// console.log(index)
 
-// --------------------------------------------- -метод SPLICE (деструктивный метод)обновляет данные
-fails.splice(1, 0,'hello',1,2,3,4,);
-console.table(fails)
+// // --------------------------------------------- -метод SPLICE (деструктивный метод)обновляет данные
+// fails.splice(1, 0,'hello',1,2,3,4,);
+// console.table(fails)
+
+
+
+
+
+
+
+
+
+// Код должен найти сумму элементов массива, однако, всегда выводит NaN:
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+// 	sum += +arr[i];
+// }
+
+// console.log(sum);
+
+
+
+
+
+
+// Код должен найти сумму элементов массива:
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i+=1) {
+// 	sum += +arr[i];
+// }
+
+// console.log(sum);
+
+
+
+
+
+// Код должен найти сумму элементов массива:
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i+=1) {
+// 	sum += +arr[i];
+// }
+
+// console.log(sum); // почему-то выводит не 15
+
+
+
+
+// Код должен возвести в квадрат каждый элемент массива:
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let elem of arr) {
+//   elem = elem ** 2;
+//   console.log(elem);
+// }
+
+
+
+
+
+
+// Код должен заполнить массив числами от 1 до 5:
+
+// let arr=[];
+
+// for (let i = 1; i <= 5; i+=1) {
+// 	arr.push(i);
+// }
+
+// console.log(arr);
+
+
+
+// const calculateEngravingPrice = function (items) {
+//   console.log(items);
+
+//   let total = 0;
+
+//   for (const item of items) {
+//     total += item;
+//   }
+//   return total;
+// }
+
+
+// console.log(calculateEngravingPrice([1,2,3]));
+// console.log(calculateEngravingPrice([5,10,15,20]));
+// console.log(calculateEngravingPrice([100,200,300]));
+
+// const logitems = function (items) {
+//   for (const item of items) {
+//     console.log(item);
+//   }
+// }
+
+// logitems(['mango','kiwi','poly','ajax']);
+// logitems([1,2,3,4,5]);
+// logitems(['клавиатура','наушники','часы']);
+
+
+
+
+
+
+
+// const logins = ['wikikwiki', 'avacode3r', 'jordi', 'potyal']
+
+
+// const fn = function (allLogins, logintofind) {
+
+//   for (const login of allLogins) {
+//     if (login === logintofind) {
+//       return `пользователь ${logintofind} найден`;
+//     }
+//   }
+
+//   return `пользователь ${logintofind} не найден`;
+// }
+
+// console.log(fn(logins, 'lola'));
+// console.log(fn(logins, 'avacode3r'));
+// console.log(fn(logins, 'genui'));
+// console.log(fn(logins, 'potyal'));
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------- ТЕРНАРНЫЙ ОПЕРАТОР (да/нет)
+// const logins = ['wikikwiki', 'avacode3r', 'jordi', 'potyal']
+
+// const fn = function (allLogins, logintofind) {
+//   return allLogins.includes(logintofind)
+//     ? `пользователь ${logintofind} найден`
+//     : `пользователь ${logintofind} не найден`;
+// }
+
+// console.log(fn(logins, 'lola'));
+// console.log(fn(logins, 'avacode3r'));
+// console.log(fn(logins, 'genui'));
+// console.log(fn(logins, 'potyal'));
+
+
+
+
+
+// --------------------------------------------------------------ПОИСК САМОГО МАЛЕНЬКОГО ЧИСЛА ЧЕРЕЗ ФУНКЦИЮ
+// const findtosmallestnumber = function (numbers) {
+//   let smallestnumber = numbers[0];
+
+//   for (const number of numbers) {
+//     if (number < smallestnumber) {
+//       smallestnumber = number;
+//     }
+//   }
+//   return smallestnumber;
+// }
+
+// console.log(findtosmallestnumber([76,25,33]));
+// console.log(findtosmallestnumber([3,5,1]));
+// console.log(findtosmallestnumber([-2,5,76]))
+
+
+
+
+
+
+
+
+// -----------------------------------------------------------------------------ЗАМЕНА РЕГИСТРА В КАЖДОМ ЭЛЕМЕНТЕ СТРОКИ НА ПРОТИВОПОЛОЖНЫЙ(с нижнего в верхний и наоборот) ЧЕРЕЗ ФУНКЦИЮ
+
+// const changeCase = function (string) {
+//   const letters = string.split('');
+//   let invertedstring = '';
+
+//   for (const letter of letters) {
+//     const isinlowercase = letter === letter.toLowerCase();
+
+//     invertedstring += isinlowercase ? letter.toUpperCase() : letter.toLowerCase();
+//   }
+//   return invertedstring;
+// }
+
+
+// console.log(changeCase('QWEDFGDFGDFGDFGdqwe'));
+// console.log(changeCase('dfgdfgdfgdfgdfgadQWfr'));
+// console.log(changeCase('dfgdfgdfgwerweerrasdGeTGFF'));
+
+
+
+
+
+
+
+
+// --------------------------------------------------------------------ВОЗВРАЩАЕМ ВСЮ СТРОКУ В МАЛЕНЬКОМ РЕГИСТРЕ И ПРОБЕЛЫ ЗАМЕНЯЮТСЯ НА ТИРЕ (2 СПОСОБА)
+
+const lowercase = function (string) {
+  // const normalizedtitle = string.toLowerCase();
+  // const word = normalizedtitle.split(' ');
+  // const slug = word.join('-');
+
+
+  // return slug
+
+
+  return string.toLowerCase().split(' ').join('-')
+}
+
+
+console.log(lowercase('Hello Guys How Are You'));
+console.log(lowercase('Lets Go To The Outside'));
+console.log(lowercase('My Home Is Very Big'));
