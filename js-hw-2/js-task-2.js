@@ -140,15 +140,6 @@
 // }
 // console.log(result);
 
-
-
-
-
-
-
-
-
-
 // Напиши функцию logItems(array), которая получает массив и использует цикл for, который для каждого элемента массива будет выводить в консоль сообщение в формате [номер элемента] - [значение элемента].
 
 // Нумерация должна начинаться с 1. К примеру для первого элемента массива ['Mango', 'Poly', 'Ajax'] с индексом 0 будет выведено '1 - Mango', а для индекса 2 выведет '3 - Ajax'.
@@ -162,18 +153,9 @@
 //   }
 // }
 
-
 // logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 
 // logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
-
-
-
-
-
-
-
-
 
 // Напиши скрипт подсчета стоимости гравировки украшений. Для этого создай функцию calculateEngravingPrice(message, pricePerWord) принимающую строку (в строке будут только слова и пробелы) и цену гравировки одного слова, и возвращающую цену гравировки всех слов в строке.
 
@@ -206,22 +188,6 @@
 //   calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
 // ); // 120
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Напиши фукцнию findLongestWord(string), которая принимает параметром произвольную строку (в строке будут только слова и пробелы) и возвращает самое длинное слово в этой строке.
 
 // const findLongestWord = function (string) {
@@ -243,16 +209,6 @@
 // console.log(findLongestWord('Google do a roll')); // 'Google'
 
 // console.log(findLongestWord('May the force be with you')); // 'force'
-
-
-
-
-
-
-
-
-
-
 
 // Напиши функцию formatString(string) которая принимает строку и форматирует ее если необходимо.
 
@@ -281,17 +237,6 @@
 //   ),
 // );
 // // вернется форматированная строка
-
-
-
-
-
-
-
-
-
-
-
 
 // Напиши функцию checkForSpam(message), принимающую 1 параметр message - строку. Функция проверяет ее на содержание слов spam и sale. Если нашли зарещенное слово то функция возвращает true, если запрещенных слов нет функция возвращает false. Слова в строке могут быть в произвольном регистре.
 
@@ -563,16 +508,6 @@
 //   alert(`Доставка в ${country} будет стоить ${price} кредитов`);
 // }
 
-
-
-
-
-
-
-
-
-
-
 // Напиши скрипт который просит посетителя ввести число в prompt до тех пор, пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
 
 // При загрузке страницы пользователю предлагается в prompt ввести число. Ввод добавляется к значению переменной total.
@@ -688,16 +623,6 @@
 // }
 // fun();
 
-
-
-
-
-
-
-
-
-
-
 // Напиши функцию formatString(string) которая принимает строку и форматирует ее если необходимо.
 
 // Если длина строки не превышает 40 символов, функция возвращает ее в исходном виде.
@@ -725,16 +650,6 @@
 //     // вернется форматированная строка
 //   ),
 // );
-
-
-
-
-
-
-
-
-
-
 
 // Напиши скрипт подсчета стоимости гравировки украшений. Для этого создай функцию calculateEngravingPrice(message, pricePerWord) принимающую строку (в строке будут только слова и пробелы) и цену гравировки одного слова, и возвращающую цену гравировки всех слов в строке.
 
@@ -767,18 +682,6 @@
 //   calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
 // ); // 120
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Напиши функцию logItems(array), которая получает массив и использует цикл for, который для каждого элемента массива будет выводить в консоль сообщение в формате [номер элемента] - [значение элемента].
 
 // Нумерация должна начинаться с 1. К примеру для первого элемента массива ['Mango', 'Poly', 'Ajax'] с индексом 0 будет выведено '1 - Mango', а для индекса 2 выведет '3 - Ajax'.
@@ -794,16 +697,6 @@
 
 // logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 
-
-
-
-
-
-
-
-
-
-
 // Напиши фукцнию findLongestWord(string), которая принимает параметром произвольную строку (в строке будут только слова и пробелы) и возвращает самое длинное слово в этой строке.
 
 // const findLongestWord = function (strings) {
@@ -817,16 +710,6 @@
 // console.log(findLongestWord('Google do a roll')); // 'Google'
 
 // console.log(findLongestWord('May the force be with you')); // 'force'
-
-
-
-
-
-
-
-
-
-
 
 // Напиши функцию formatString(string) которая принимает строку и форматирует ее если необходимо.
 
@@ -855,14 +738,6 @@
 //   ),
 // );
 // // вернется форматированная строка
-
-
-
-
-
-
-
-
 
 // Есть массив logins с логинами пользователей. Напиши скрипт добавления логина в массив logins. Добавляемый логин должен:
 
@@ -912,17 +787,6 @@
 // console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
 // console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
 
-
-
-
-
-
-
-
-
-
-
-
 // Объяви две переменные хранящие название и цену товара: name и price
 // Присвой переменным следующие характеристики товара (сразу при объявлении)
 // название: Генератор защитного поля
@@ -937,15 +801,6 @@
 // console.log(`Выбран ${name}, цена за штуку ${price} кредитов`);
 //  price = 2000;
 // console.log(`Выбран ${name}, цена за штуку ${price} кредитов`);
-
-
-
-
-
-
-
-
-
 
 // Напиши скрипт проверки количества товаров на складе. Есть переменные total (количество товаров на складе) и ordered (единиц товара в заказе).
 
@@ -963,16 +818,6 @@
 // if (ordered > total) {
 //   console.log("На складе недостаточно твоаров!")
 // } else console.log("Заказ оформлен, с вами свяжется менеджер")
-
-
-
-
-
-
-
-
-
-
 
 // Напиши скрипт имитирующий авторизацию администратора в панели управления.
 
@@ -995,17 +840,6 @@
 // } else message = 'Доступ запрещен, неверный пароль!';
 
 // alert(message);
-
-
-
-
-
-
-
-
-
-
-
 
 // На счету пользователя есть 23580 кредитов, значение хранится в переменной credits (создай и присвой). Пользователь решает купить ремонтных дроидов, которые стоят по 3000 кредитов за штуку. Цена одного дроида хранится в переменной pricePerDroid (создай и присвой).
 
@@ -1038,12 +872,6 @@
 //     );
 //   }
 // }
-
-
-
-
-
-
 
 // Пользователь может оформить доставку товара к себе в страну, указав ее при посещении страницы в prompt. Учти, пользователь может ввести имя страны не только буквами нижнего регистра, а к примеру 'кИтАЙ'.
 // Напиши скрипт который выводит сообщение о стоимости доставки в указанную страну. Обязательно используй switch. Формат сообщения: 'Доставка в [страна] будет стоить [цена] кредитов'.
@@ -1084,12 +912,6 @@
 // }
 //   console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
 
-
-
-
-
-
-
 // Напиши скрипт который просит посетителя ввести число в prompt до тех пор, пока посетитель на нажмет Cancel и каждый раз добавляет введенное значение к общей сумме.
 
 // При загрузке страницы пользователю предлагается в prompt ввести число. Ввод добавляется к значению переменной total.
@@ -1117,11 +939,6 @@
 
 // alert(`Общая сумма чисел равна ${total}`);
 
-
-
-
-
-
 // Код должен найти сумму элементов массива, однако, всегда выводит NaN:
 
 // let arr = ['1', '2', '3', '4', '5'];
@@ -1132,10 +949,6 @@
 // }
 
 // console.log(sum); // почему-то выводит NaN
-
-
-
-
 
 // const array = ['body', 'hands', 'legs'];
 // console.log(array);
@@ -1150,11 +963,9 @@
 // const array = ['body', 'hands', 'legs'];
 
 // for (let i = 0; i < array.length; i += 1) {
-  
+
 //   console.log(array[i]);
 // }
-
-
 
 // const array = ['hello', 'word', 'how', 'are', 'you'];
 
@@ -1167,10 +978,6 @@
 //   console.log(string);
 // }
 
-
-
-
-
 // const array = ['hello', 'word', 'how', 'are', 'you'];
 // const findofword = 'how';
 // let result = 'NOOOO';
@@ -1180,20 +987,9 @@
 //     result='oh my gosh yes';
 //     break;
 //   }
-  
+
 // }
 //  console.log(result);
-
-
-
-
-
-
-
-
-
-
-
 
 // const array = [1, 2, 3, 15, 13, 16, 21, 26, 32, 64, 3, 6, 8]
 // const pressnumber = 15;
@@ -1205,14 +1001,6 @@
 //   }
 //   console.log(array[i]);
 // }
-
-
-
-
-
-
-
-
 
 // const friends = ['alex', 'dmitri', 'anna', 'arina','hero','dava','jora','vika']
 // console.log(friends);
@@ -1254,20 +1042,16 @@
 // }
 // console.log(total);
 
-
-
 // let total=0;
 // for (let apple of apples) {
 //   total+=apple;
 // }
 //   console.log(total);
 
-
 // for (let i = 0; i < apples.length; i += 1){
 //   apples[i] = Math.round(apples[i] * 3)
 //   console.log(apples[i]);
 // }
-
 
 // const apples = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14]
 // let total = 0;
@@ -1275,7 +1059,7 @@
 //   if (apple % 2 === 0) {
 //     console.log(`${apple}-четное`);
 //     total += apple;
-    
+
 //   }
 // }
 // console.log(total);
@@ -1286,7 +1070,6 @@
 //     console.log('четное')
 //   }
 // }
-
 
 // const logins = ['telek', 'admin', 'afrika', 'kanada', 'monkey']
 // const logintofind = 'kanada';
@@ -1299,7 +1082,6 @@
 // // }
 // // console.log (message)
 
-
 // // console.log(logins.includes(logintofind));
 // // const a = 15 > 10 ?'y':'n';
 // // console.log(a)
@@ -1308,9 +1090,6 @@
 //   ? `${logintofind} логин есть`
 //   : `${logintofind} логина нет`;
 // console.log(a)
-
-
-
 
 // const numbers = [51, 18, 13, 24, 7, 85, 19];
 // let smallnumber = numbers[0];
@@ -1323,11 +1102,6 @@
 // }
 // console.log(smallnumber);
 
-
-
-
-
-
 // const logins = ['telek', 'admin', 'afrika', 'kanada', 'monkey'];
 // let string = '';
 
@@ -1336,12 +1110,8 @@
 // }
 // console.log(string);
 
-
-
 // const string = logins.join(' --- ')
 // console.log(string)
-
-
 
 // const name = 'JavaScript'
 // const strings = name.split('');
@@ -1364,20 +1134,12 @@
 
 // console.log(invertedstring);
 
-
-
-
 // ------------------------------------------------------------------методы работающие по ЦЕПОЧКЕ
 // const title = 'Hello Guys , How Are You';
 // console.log(title)
 
 // const wrongtitle = title.toLowerCase().split(' ').join('---');
 // console.log(wrongtitle)
-
-
-
-
-
 
 // ---------------------------------------------------------------метод CONCAT
 // const array1 = [5, 10, 15, 20];
@@ -1390,12 +1152,6 @@
 // }
 
 // console.log(total);
-
-
-
-
-
-
 
 // const fails = [
 //   'карточка-1',
@@ -1414,14 +1170,6 @@
 // fails.splice(1, 0,'hello',1,2,3,4,);
 // console.table(fails)
 
-
-
-
-
-
-
-
-
 // Код должен найти сумму элементов массива, однако, всегда выводит NaN:
 
 // let arr = ['1', '2', '3', '4', '5'];
@@ -1433,11 +1181,6 @@
 
 // console.log(sum);
 
-
-
-
-
-
 // Код должен найти сумму элементов массива:
 
 // let arr = ['1', '2', '3', '4', '5'];
@@ -1448,10 +1191,6 @@
 // }
 
 // console.log(sum);
-
-
-
-
 
 // Код должен найти сумму элементов массива:
 
@@ -1464,9 +1203,6 @@
 
 // console.log(sum); // почему-то выводит не 15
 
-
-
-
 // Код должен возвести в квадрат каждый элемент массива:
 
 // let arr = [1, 2, 3, 4, 5];
@@ -1475,11 +1211,6 @@
 //   elem = elem ** 2;
 //   console.log(elem);
 // }
-
-
-
-
-
 
 // Код должен заполнить массив числами от 1 до 5:
 
@@ -1491,8 +1222,6 @@
 
 // console.log(arr);
 
-
-
 // const calculateEngravingPrice = function (items) {
 //   console.log(items);
 
@@ -1503,7 +1232,6 @@
 //   }
 //   return total;
 // }
-
 
 // console.log(calculateEngravingPrice([1,2,3]));
 // console.log(calculateEngravingPrice([5,10,15,20]));
@@ -1519,14 +1247,7 @@
 // logitems([1,2,3,4,5]);
 // logitems(['клавиатура','наушники','часы']);
 
-
-
-
-
-
-
 // const logins = ['wikikwiki', 'avacode3r', 'jordi', 'potyal']
-
 
 // const fn = function (allLogins, logintofind) {
 
@@ -1544,13 +1265,6 @@
 // console.log(fn(logins, 'genui'));
 // console.log(fn(logins, 'potyal'));
 
-
-
-
-
-
-
-
 // ------------------------------------------------------------------------- ТЕРНАРНЫЙ ОПЕРАТОР (да/нет)
 // const logins = ['wikikwiki', 'avacode3r', 'jordi', 'potyal']
 
@@ -1564,10 +1278,6 @@
 // console.log(fn(logins, 'avacode3r'));
 // console.log(fn(logins, 'genui'));
 // console.log(fn(logins, 'potyal'));
-
-
-
-
 
 // --------------------------------------------------------------ПОИСК САМОГО МАЛЕНЬКОГО ЧИСЛА ЧЕРЕЗ ФУНКЦИЮ
 // const findtosmallestnumber = function (numbers) {
@@ -1585,13 +1295,6 @@
 // console.log(findtosmallestnumber([3,5,1]));
 // console.log(findtosmallestnumber([-2,5,76]))
 
-
-
-
-
-
-
-
 // -----------------------------------------------------------------------------ЗАМЕНА РЕГИСТРА В КАЖДОМ ЭЛЕМЕНТЕ СТРОКИ НА ПРОТИВОПОЛОЖНЫЙ(с нижнего в верхний и наоборот) ЧЕРЕЗ ФУНКЦИЮ
 
 // const changeCase = function (string) {
@@ -1606,17 +1309,9 @@
 //   return invertedstring;
 // }
 
-
 // console.log(changeCase('QWEDFGDFGDFGDFGdqwe'));
 // console.log(changeCase('dfgdfgdfgdfgdfgadQWfr'));
 // console.log(changeCase('dfgdfgdfgwerweerrasdGeTGFF'));
-
-
-
-
-
-
-
 
 // --------------------------------------------------------------------ВОЗВРАЩАЕМ ВСЮ СТРОКУ В МАЛЕНЬКОМ РЕГИСТРЕ И ПРОБЕЛЫ ЗАМЕНЯЮТСЯ НА ТИРЕ (2 СПОСОБА)
 
@@ -1625,24 +1320,14 @@
 //   // const word = normalizedtitle.split(' ');
 //   // const slug = word.join('-');
 
-
 //   // return slug
-
 
 //   return string.toLowerCase().split(' ').join('-')
 // }
 
-
 // console.log(lowercase('Hello Guys How Are You'));
 // console.log(lowercase('Lets Go To The Outside'));
 // console.log(lowercase('My Home Is Very Big'));
-
-
-
-
-
-
-
 
 // -------------------------------------------------------------ПСЕВДОМАССИВ В МАССИВ ЧЕРЕЗ Array.from
 // const fn = function () {
@@ -1653,15 +1338,9 @@
 //   console.log(args);
 // }
 
-
 // fn(1, 2, 3);
 // fn(2, 3, 5, 6, 3, 4);
 // fn(3, 5, 1, 2, 3, 5, 6, 67, 4, 3, 45);
-
-
-
-
-
 
 // -------------------------------------------------------------ПСЕВДОМАССИВ В МАССИВ ЧЕРЕЗ ... REST (ставится в самом конце параметров-сначало какие аргументы хочешь отдельно, потом все остальные в массив) (БОЛЕЕ СОВРЕМЕННЫЙ СПОСОБ) (в параметры можно записывать любое слово)
 
@@ -1670,12 +1349,9 @@
 //   console.log(Leha);
 // }
 
-
 // fn('hello',1, 2, 3);
 // fn('aloha',2, 3, 5, 6, 3, 4);
 // fn('bonjur',3, 5, 1, 2, 3, 5, 6, 67, 4, 3, 45);
-
-
 
 // ---------------------------------------------------------------ЗАДАЧИ НА ПСЕВДОМАССИВ ...
 
@@ -1689,15 +1365,9 @@
 //   return total
 // }
 
-
 // console.log(fn(1, 2, 3));
 // console.log(fn(2, 3, 5, 6, 3, 4));
 // console.log(fn(3, 5, 1, 2, 3, 5, 6, 67, 4, 3, 45));
-
-
-
-
-
 
 // ---------------------------------------------------------------ЗАДАЧИ НА ПСЕВДОМАССИВ ...
 
@@ -1727,10 +1397,6 @@
 // console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8)); // [2, 3]
 // console.log(filterNumbers([10, 15, 25, 30], 23, 30, 18, 15)); // [30, 15]
 // console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
-
-
-
-
 
 // -----------------------------------------------------------------------------------------ЗАДАЧА НА ФУНКЦИИ ВЛОЖЕННЫЕ В ДРУГИЕ ФУНКЦИИ
 
@@ -1763,9 +1429,6 @@
 // // isLoginValid только проверяет валидный ли логин и возвращает true или false.
 // // addLogin добавляет или не добавляет логин в массив.При этом для проверок условия добавления использует результаты вызовов других функций - isLoginUnique и isLoginValid.
 
-
-
-
 // const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 // let message = '';
 
@@ -1775,22 +1438,18 @@
 // };
 // // console.log(isLoginValid('kiwi'));
 
-
 // const isLoginUnique = function(allLogins, login) {
 //   // твой код
 //   return !allLogins.includes(login);
 
-  
 //   // if (result === true) {
 //   //   return false;
 //   // } return true
 // };
 // // console.log(isLoginUnique(['polo','kesha','krol'],'kiwi'));
 
-
-
 // const addLogin = function (allLogins, login) {
-  
+
 //   if (isLoginValid(login)) {
 //     if (isLoginUnique(allLogins, login)) {
 //       allLogins.push(login);
@@ -1806,3 +1465,176 @@
 // console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
 // console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
 // console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+
+// const playlist = {
+//   name: 'мой плейлист',
+//   rating: 5,
+//   tracks: ['трек-1', 'трек-2'],
+//   trackCount: 3,
+// };
+// playlist.qwe = 5;
+// console.log(playlist)
+// console.log(playlist.name);
+// console.log(playlist.rating);
+// console.log(playlist.tracks);
+// console.log(playlist['rating']);
+
+// const propertyName = 'tracks';
+// console.log(playlist[propertyName]);
+
+// const username = 'mango';
+// const email = 'mtptz21@gmail.com';
+// const sigupData = {
+//   username,
+//   email
+// }
+// console.log(sigupData);
+
+// const inputname = 'color';
+// const inputvalue = 'tomato';
+// const colorpickerdata = {
+//   [inputname]: inputvalue,
+// };
+// console.log(colorpickerdata);
+
+// const playlist = {
+//   name: 'мой плейлист',
+//   rating: 5,
+//   tracks: ['трек-1', 'трек-2'],
+//   trackCount: 3,
+//   getname (a) {
+//     console.log('hello',a)
+//   },
+//   changename (newname) {
+//     console.log('this внутри changename ',
+//       this);
+//     this.name = newname;
+//   },
+//   addtrack(track) {
+//     this.tracks.push(track);
+//   },
+//   uodaterating(newrating) {
+//     this.rating = newrating;
+//   },
+// };
+
+// // console.log(playlist);
+// playlist.getname(4)
+// playlist.changename('новое имя');
+// playlist.addtrack('новый трек');
+
+// const feedback = {
+//   good: 5,
+//   neutral: 10,
+//   bad: 3,
+// };
+
+// let totalfeedback = 0;
+// const keys = Object.keys(feedback);
+// console.log(keys);
+
+// for (const key of keys) {
+//   console.log(key);
+//   console.log(feedback[key]);
+
+//   totalfeedback += feedback[key];
+// }
+// console.log(totalfeedback);
+
+// ----------------------------------------------------------------------------------------ПЕРЕБОР МАССИВА ОБЬЕКТОВ
+// const friends = [
+//   { name: 'mango', online: false },
+//   { name: 'kiwi', online: true },
+//   { name: 'poly', online: true },
+//   { name: 'ajax', online: false },
+// ];
+
+// console.table(friends);
+
+// for (const friend of friends) {
+//   console.log(friend.name);
+// }
+
+// ---------------------------------------------------------------------------------------ПОИСК В МАССИВЕ ОБЬЕКТОВ ДРУГА ПО ИМЕНИ
+// const friends = [
+//   { name: 'mango', online: false },
+//   { name: 'kiwi', online: true },
+//   { name: 'poly', online: true },
+//   { name: 'ajax', online: false },
+// ];
+
+// const findfriendbyname = function (allfriends, friendname) {
+//   for (const friend of friends) {
+//     console.log(friend);
+//     console.log(friend.name);
+//     // console.log(friend.online);
+//     if (friend.name === friendname) {
+//       return 'good';
+//     }
+//   }
+//   return 'bad'
+// };
+
+// console.log(findfriendbyname(friends,'poly'));
+// console.log(findfriendbyname(friends,'chelsy'));
+
+// -----------------------------------------------------------------------------------ПОЛУЧАЕМ ВСЕ ИМЕНА ДРУЗЕЙ ИЗ МАССИВА ОБЬЕКТОВ
+// const friends = [
+//   { name: 'mango', online: false },
+//   { name: 'kiwi', online: true },
+//   { name: 'poly', online: true },
+//   { name: 'ajax', online: false },
+// ];
+
+// const getallnames = function (allfriends) {
+//   const names = [];
+
+//   for (const friend of friends) {
+//     console.log(friend.name);
+
+//     names.push(friend.name);
+//   }
+//   return names;
+// };
+
+// console.log(getallnames(friends));
+
+
+
+
+
+// -----------------------------------------------------------------------------------НУЖНО ПОЛУЧИТЬ ВСЕХ ДРУЗЕЙ КОТОРЫЕ ОНЛАЙН
+// const friends = [
+//   { name: 'mango', online: false },
+//   { name: 'kiwi', online: true },
+//   { name: 'poly', online: true },
+//   { name: 'ajax', online: false },
+// ];
+// console.table(friends)
+
+// const getonlinefriends = function (allfriends) {
+
+//   const onlinefriends = [];
+  
+//   for (const friend of friends) {
+//     console.log(friend);
+//     console.log(friend.online);
+
+//     if (friend.online) {
+//       onlinefriends.push(friend)
+//     }
+//   }
+//   return onlinefriends; 
+// };
+
+// console.log(getonlinefriends(friends));
+
+// // ----------------------------------------------------------------------------------ПЕРЕБОР ОБЬЕКТА(длинна)
+// const x = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+//   d: 4,
+  
+// };
+// console.log(Object.keys(x).length);
