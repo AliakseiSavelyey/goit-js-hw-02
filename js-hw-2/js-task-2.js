@@ -1599,10 +1599,6 @@
 
 // console.log(getallnames(friends));
 
-
-
-
-
 // -----------------------------------------------------------------------------------НУЖНО ПОЛУЧИТЬ ВСЕХ ДРУЗЕЙ КОТОРЫЕ ОНЛАЙН
 // const friends = [
 //   { name: 'mango', online: false },
@@ -1615,7 +1611,7 @@
 // const getonlinefriends = function (allfriends) {
 
 //   const onlinefriends = [];
-  
+
 //   for (const friend of friends) {
 //     console.log(friend);
 //     console.log(friend.online);
@@ -1624,7 +1620,7 @@
 //       onlinefriends.push(friend)
 //     }
 //   }
-//   return onlinefriends; 
+//   return onlinefriends;
 // };
 
 // console.log(getonlinefriends(friends));
@@ -1635,6 +1631,244 @@
 //   b: 2,
 //   c: 3,
 //   d: 4,
-  
+
 // };
 // console.log(Object.keys(x).length);
+
+
+
+
+
+// Напиши функцию findBestEmployee(employees), которая принимает объект сотрудников и возвращает имя самого продуктивного (который выполнил больше всех задач). Сотрудники и кол-во выполненых задач содержатся как свойства объекта в формате "имя":"кол-во задач".
+
+// const findBestEmployee = function (employees) {
+  
+//   const keys = Object.keys(employees);
+//   // console.log(keys)
+//   let num = 0;
+//   let person = '';
+
+//   for (const key of keys) {
+//     // console.log(key)
+//     // console.log(employees[key]);
+//     if (employees[key] > num) {
+//       num = employees[key];
+//       person = key;
+//     }
+//   }
+//   return person;
+// }
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(
+//   findBestEmployee({
+//     ann: 29,
+//     david: 35,
+//     helen: 1,
+//     lorence: 99,
+//   }),
+// ); // lorence
+
+// console.log(
+//   findBestEmployee({
+//     poly: 12,
+//     mango: 17,
+//     ajax: 4,
+//   }),
+// ); // mango
+
+// console.log(
+//   findBestEmployee({
+//     lux: 147,
+//     david: 21,
+//     kiwi: 19,
+//     chelsy: 38,
+//   }),
+// ); // lux
+
+
+
+
+
+
+
+
+// Напиши функцию countTotalSalary(employees) принимающую объект зарплат. Функция считает общую сумму запрплаты работников и возращает ее. Каждое поле объекта, передаваемого в функцию, имеет вид "имя":"зарплата".
+
+// const countTotalSalary = function (employees) {
+
+//   const val = Object.values(employees);
+//   // console.log(val);
+//   let total = 0;
+//   for (const emp of val) {
+//     // console.log(emp);
+//     total += emp;
+//   }
+//   return total
+// };
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(countTotalSalary({})); // 0
+
+// console.log(
+//   countTotalSalary({
+//     mango: 100,
+//     poly: 150,
+//     alfred: 80,
+//   }),
+// ); // 330
+
+// console.log(
+//   countTotalSalary({
+//     kiwi: 200,
+//     lux: 50,
+//     chelsy: 150,
+//   }),
+// ); // 400
+
+
+
+
+
+
+// Напиши функцию getAllPropValues(arr, prop), которая получает массив объектов и имя свойства. Возвращает массив значений определенного свойства prop из каждого объекта в массиве.
+
+// const products = [
+//   { name: 'Радар', price: 1300, quantity: 4 },
+//   { name: 'Сканер', price: 2700, quantity: 3 },
+//   { name: 'Дроид', price: 400, quantity: 7 },
+//   { name: 'Захват', price: 1200, quantity: 2 },
+// ];
+
+// const getAllPropValues = function(arr, prop) {
+//   // твой код
+//   const array = [];
+  
+//   for (const ar of arr) {
+//     let value = ar[prop];
+
+//     if (value != undefined) {
+//       array.push(value);
+//     }
+//   }
+//   return array;
+// };
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроид', 'Захват']
+
+// console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
+
+// console.log(getAllPropValues(products, 'category')); // []
+
+
+
+
+
+
+
+
+
+// Напиши функцию calculateTotalPrice(allProdcuts, productName), которая получает массив объектов и имя продукта (значение свойства name). Возвращает общую стоимость продукта (цена * количество).
+// Вызовы функции для проверки работоспособности твоей реализации.
+
+
+// const products = [
+//   { name: 'Радар', price: 1300, quantity: 4 },
+//   { name: 'Сканер', price: 2700, quantity: 3 },
+//   { name: 'Дроид', price: 400, quantity: 7 },
+//   { name: 'Захват', price: 1200, quantity: 2 },
+// ];
+
+// const calculateTotalPrice = function (allProducts, productName) {
+
+//   for (const prod of allProducts) {
+//     if (prod.name === productName) {
+//       return prod.price * prod.quantity;
+//     }
+//   };
+// };
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(calculateTotalPrice(products, 'Радар')); // 5200
+
+// console.log(calculateTotalPrice(products, 'Дроид')); // 2800
+
+
+
+
+
+
+
+
+Напиши скрипт управления личным кабинетом интернет банка. Есть объект account в котором необходимо реализовать методы для работы с балансом и историей транзакций.
+
+/*
+ * Типов транзацкий всего два.
+ * Можно положить либо снять деньги со счета.
+ */
+const Transaction = {
+  DEPOSIT: 'deposit',
+  WITHDRAW: 'withdraw',
+};
+
+/*
+ * Каждая транзакция это объект со свойствами: id, type и amount
+ */
+
+const account = {
+  // Текущий баланс счета
+  balance: 0,
+
+  // История транзакций
+  transactions: [],
+
+  /*
+   * Метод создает и возвращает объект транзакции.
+   * Принимает сумму и тип транзакции.
+   */
+  createTransaction(amount, type) {},
+
+  /*
+   * Метод отвечающий за добавление суммы к балансу.
+   * Принимает сумму танзакции.
+   * Вызывает createTransaction для создания объекта транзакции
+   * после чего добавляет его в историю транзакций
+   */
+  deposit(amount) {},
+
+  /*
+   * Метод отвечающий за снятие суммы с баланса.
+   * Принимает сумму танзакции.
+   * Вызывает createTransaction для создания объекта транзакции
+   * после чего добавляет его в историю транзакций.
+   *
+   * Если amount больше чем текущий баланс, выводи сообщение
+   * о том, что снятие такой суммы не возможно, недостаточно средств.
+   */
+  withdraw(amount) {},
+
+  /*
+   * Метод возвращает текущий баланс
+   */
+  getBalance() {},
+
+  /*
+   * Метод ищет и возвращает объект транзации по id
+   */
+  getTransactionDetails(id) {},
+
+  /*
+   * Метод возвращает количество средств
+   * определенного типа транзакции из всей истории транзакций
+   */
+  getTransactionTotal(type) {},
+};
